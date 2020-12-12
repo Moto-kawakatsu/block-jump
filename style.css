@@ -9,27 +9,39 @@
     justify-content:center;
     padding:20px;
     font-family: 'Ubuntu Mono', monospace;
-    font-size:20px;
-    margin-top:200px;
-}
-.score {
-    font-family: 'Ubuntu Mono', monospace;
-    font-size:20px;
+    font-size:40px;
 }
 
+
 .game{
-    width: 500px;
-    height: 200px;
-    border: 1px solid black;
-    margin: auto;
-    background-color:rgba(255, 236, 112, 0.548);
-}
-#character{
-    width: 70px;
-    height: 50px;
-    /* background-color: red; */
     position:relative;
-    top: 150px;
+    width: 800px;
+    height: 500px;
+    margin: auto;
+    background-image:url("images/bg.jpg");
+    background-size:cover;
+    background-repeat: no-repeat;
+}
+
+.score {
+    position:absolute;
+    top:10%;
+    left:35%;
+    color:white;
+    font-family: 'Ubuntu Mono', monospace;
+    font-size:60px;
+}
+
+#scoreSpan {
+  font-size:90px;
+  font-weight:bold;
+}
+
+#character{
+    width: 90px;
+    height:100px;
+    position:relative;
+    top: 80%;
     
 }
 .animate{
@@ -39,32 +51,28 @@
     0%{top: 150px;}
     30%{top: 100px;}
     70%{top: 100px;}
-    100%{top: 150px;}
+    100%{top: 200px;}
 }
 
 #block{
-    /* background-color: blue; */
-    width: 50px;
-    height: 40px;
+    width: 280px;
+    height: 250px;
     position: relative;
-    top: 110px;
+    top: 35%;
     left: 500px;
-    animation: block 1s infinite linear;
-    /* color:white; */
-    /* border-radius:100%; */
-    /* border:30px red solid; */
+    animation: block 0.8s infinite linear;
 }
 @keyframes block{
-    0%{left: 500px}
-    100%{left: -20px}
+    0%{left: 1200px}
+    100%{left: -400px}
 }
 p{
     text-align: center;
 }
 
 .image {
-    width:90px;
-    height:90px;
+    width:100%;
+    height:100%;
 }
 
 .image2 {
